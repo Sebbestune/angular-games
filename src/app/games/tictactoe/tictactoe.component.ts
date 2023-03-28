@@ -68,6 +68,7 @@ class GameBoard {
 })
 export class TictactoeComponent {
   board = new GameBoard;
+  title = "TicTacToe";
 
   constructor() {
     console.log(this.board);
