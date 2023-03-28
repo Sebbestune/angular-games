@@ -1,5 +1,7 @@
 <div class="grid-container">
-    <div *ngFor="let gridItem of board.gridItems" class="grid-item">
+    <div *ngFor="let gridItem of board.gridItems" class="grid-item" (click)="!gridItem.clicked ? gridItem.set(board.changeTurn()) : gridItem.ignore()">
         {{gridItem.value}}
     </div>
 </div>
+
+<button type="button" #btn>Button</button>
